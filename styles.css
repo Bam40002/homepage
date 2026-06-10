@@ -2,17 +2,9 @@
 
 
 body {
-    background-image: url("assets/icon.png");
-    animation-duration: 10s;
-    animation-name: broMove;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    background-image: url("assets/wavy2.png");
+    background-attachment: fixed;
 }
-/*368pixels is the width of the image times two. */
-@keyframes broMove {
-      to {background-position: 368px 368px}
-  }
-
 img.icon {
     width: 200px;
     animation: normal;
@@ -46,7 +38,7 @@ div{
 }
 
 div.titl {
-    border: 10px outset rgb(71, 71, 71);
+    border: 5px solid rgb(0, 60, 61);
     background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
     text-align: center;
     color: transparent;
@@ -56,12 +48,11 @@ div.titl {
     width: 1040px;
     margin: auto;
 
-
     margin-top: 300px;
 }
 
 div.selector {
-    border: 10px outset rgb(71, 71, 71);
+    border: 5px solid rgb(8, 7, 10);
     background-color: rgb(71, 71, 71);
     background-image: url("assets/CEIL5_1.png");
     text-align: center;
@@ -70,19 +61,6 @@ div.selector {
     margin: auto;
 
     margin-top: 20px;
-}
-
-
-div.box {
-    border: 10px outset rgb(71, 71, 71);
-    background-color: rgb(71, 71, 71);
-    background-image: url("assets/statbd.png");
-    text-align: center;
-
-    width: 1240px;
-    margin: auto;
-
-    margin-top: 50px;
 }
 
 div.intern {
@@ -161,7 +139,7 @@ a, a:link, a:visited, a:active, .linkOn, .linkOff, input
 	color: #ffffff;
 	text-decoration: none;
 	background-image: linear-gradient(to right, #202020, #6d6d6d);
-	border: 1px solid #222222; 
+	border: 2px solid #222222; 
 	padding: 5px 10px 5px 10px;
 	margin: 0 2px 0 0;
 	cursor:pointer;
@@ -170,7 +148,7 @@ a, a:link, a:visited, a:active, .linkOn, .linkOff, input
 
 
 @keyframes rainbow {
-    0%{background-position:0% 50%; border: 10px outset #6666ff }
-    50%{background-position:100% 25%; border: 10px outset #0099ff}
-    100%{background-position:0% 50%; border: 10px outset #6666ff}
+    0%{background-position:0% 50%; border: 5px solid #6666ff }
+    50%{background-position:100% 25%; border: 5px solid #0099ff}
+    100%{background-position:0% 50%; border: 5px solid #6666ff}
 }
