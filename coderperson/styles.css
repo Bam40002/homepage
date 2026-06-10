@@ -165,6 +165,12 @@ a, a:link, a:visited, a:active, .linkOn, .linkOff, input
     outline: 5px solid rgb(8, 7, 10);
 }
 
+#showcaseImage {
+    width: 500px;
+    height: 100%;
+    outline: 5px solid rgb(8, 7, 10);
+}
+
 #lathevid {
     outline: 5px solid rgb(8, 7, 10);
     margin-top: 30px;
