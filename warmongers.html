@@ -9,11 +9,33 @@
     <title>WARMONGERS</title>
     <link rel="stylesheet" href="warmongers.css">
     <link rel="icon" type="image/x-icon" href="assets/war.png">
+
+    <script>
+        // song is autoplay
+        let BGmusic = true
+        function ToggleMusic() {
+            if (BGmusic) {
+                MusicOff()
+            } else {
+                MusicOn()
+            }
+        }
+
+        function MusicOff() {
+            document.getElementById('bgMusic').pause()
+            BGmusic = false
+        }
+
+        function MusicOn() {
+            document.getElementById('bgMusic').play()
+            BGmusic = true
+        }
+    </script>
 </head>
 
 <body>
     <div id="wrapper">
-        <audio autoplay loop src="assets/tekken.ogg"></audio>
+        <audio id="bgMusic" autoplay loop src="assets/tekken.ogg"></audio>
         <video autoplay loop id="bgVideo" muted="" playsinline="">
             <source src="assets/fireloop.mp4" type="video/mp4">
         </video>
@@ -22,7 +44,13 @@
 
         <div class="war">
             <center><img src="assets/warmongers.png" alt=""></center>
+            <div class="buttoncontainer">
+                <a href="index.html">HOME</a>
+                <a href="https://github.com/casualspacestation14enjoyer/StonekeepWarmongers">GITHUB</a>
+                <button class="containerbutton" onclick="ToggleMusic()" >TOGGLE MUSIC</button>
+            </div>
             <div class="paper">
+
                 <center>
                     <h1>Because in war, people die.</h1>
                     <p>Weclome to Stonekeep's WARMONGERS.</p>

@@ -16,6 +16,14 @@ div{
     margin: auto;
 }
 
+div.buttoncontainer{
+  background-image: radial-gradient(#5f0f0f, #973333);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: solid 4px #5f0f0f;
+  width: 1255px;
+  font-size: 20px;
+}
+
 div.paper{
     background-image: url(assets/papyrus.png);
     width: 1240px;
@@ -63,6 +71,31 @@ h5,
 h6 {
     font-weight: bold;
     text-align: center;
+}
+
+a, a:link, a:visited, a:active, .linkOn, .linkOff, input
+{
+	color: #ffffff;
+	text-decoration: none;
+	background-image: linear-gradient(to right, #101a10, #223622);
+	border: 1px solid #223622; 
+	padding: 5px 10px 5px 10px;
+	margin-right: 10px;
+	cursor:pointer;
+	white-space:nowrap;
+}
+
+button.containerbutton{
+	color: #ffffff;
+	text-decoration: none;
+	background-image: linear-gradient(to right, #1a1010, #362222);
+	border: 1px solid #223622; 
+	padding: 5px 10px 5px 10px;
+	margin-right: 10px;
+	cursor:pointer;
+	white-space:nowrap;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
 }
 
 
