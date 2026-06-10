@@ -4,13 +4,13 @@
 body {
     background-image: url("assets/icon.png");
     animation-duration: 10s;
-    animation-name: example;
+    animation-name: broMove;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
-@keyframes example {
-      to {background-position: 184px}
+@keyframes broMove {
+      to {background-position: 368px}
   }
 
 img.icon {
@@ -172,5 +172,5 @@ a, a:link, a:visited, a:active, .linkOn, .linkOff, input
 @keyframes rainbow {
     0%{background-position:0% 50%; border: 10px outset #6666ff }
     50%{background-position:100% 25%; border: 10px outset #0099ff}
-    100%{background-position:0% 50%; border: 10px outset #00ff00}
+    100%{background-position:0% 50%; border: 10px outset #6666ff}
 }

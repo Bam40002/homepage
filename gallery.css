@@ -1,0 +1,19 @@
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+div.exitbutton{
+    background-image: radial-gradient(#2cb82c, #978033);
+}
+
+a, a:link, a:visited, a:active, .linkOn, .linkOff, input
+{
+	color: #ffffff;
+	text-decoration: none;
+	background-image: linear-gradient(to right, #101a10, #223622);
+	border: 1px solid #223622; 
+	padding: 5px 10px 5px 10px;
+	margin: 0 2px 0 0;
+	cursor:pointer;
+	white-space:nowrap;
+}
