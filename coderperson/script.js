@@ -70,6 +70,8 @@ function PopulateParticles() {
 }
 
 function ProcessParticles() {
+	if ( !document.hasFocus() ) return
+
 	context.clearRect(0,0, board.width, board.height)
 
 	particles.forEach((item) => {
