@@ -8,9 +8,9 @@ body {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
-
+/*368pixels is the width of the image times two. */
 @keyframes broMove {
-      to {background-position: 368px}
+      to {background-position: 368px 368px}
   }
 
 img.icon {
