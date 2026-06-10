@@ -2,16 +2,12 @@
 
 
 body {
-    background-image: url("assets/icon.png");
+    background-image: url("https://storage.ko-fi.com/cdn/useruploads/238d061f-85f4-4120-b7ef-d4dd5af6560b_png_a00de376-fee1-4dfa-b905-792cb513cc01cover.png?v=c053e565-2f65-4ab9-9635-2baa4b087e17");
     animation-duration: 10s;
     animation-name: example;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
-
-@keyframes example {
-      to {background-position: 184px}
-  }
 
 img.icon {
     width: 200px;
