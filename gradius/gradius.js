@@ -23,6 +23,8 @@ let music = new Audio("./gradius/D_RUNNIN.ogg")
 let gameover = false
 let score = 0
 
+let tick = 0
+
 
 //Runs a route within byond, client or server side. Consider this "ehjax" for byond.
 function runByond(uri) {
@@ -43,12 +45,18 @@ class PlayerShip {
     }
     // fire da bullet
     fireBullet() {
+        if (this.lastShoot + this.shootDelay > tick ) {
+            return
+        }
+
         var bullet = new Bullet(new Image(), this.x + this.width, this.y + this.height/2 -1)
         bullet.image.src = "./gradius/GRADBULL.png"
         bullet.image.onload = function() {
             context.drawImage(bullet.image, bullet.x, bullet.y, bullet.width, bullet.height)
         }
         bullets.push(bullet)
+
+        this.lastShoot = tick;
 
         var sound = new Audio("./gradius/GRADFIRE.ogg")
         sound.volume = 0.5
@@ -383,7 +391,12 @@ let shipVelocity = {
     y : 0
 }
 
-// Very retarded. Make this better in the future
+// Very stupd. Make this better in the future
+// Dont know if there is a better way to do this. whatever I guess with a switch? welp!
+
+
+// The fuck you mean keyCode is depecrated? 
+// What am I supposed to do now :sob:
 window.onkeydown= function(gfg){
     if (gameover) {
         if(gfg.keyCode === control_button){
@@ -420,23 +433,23 @@ window.onkeyup= function(gfg){
         return
     }
 
-    if(gfg.keyCode === right_arrow){
+    if(gfg.keyCode === right_arrow && right){
         shipVelocity.x -= 1
         right = false
     }
-    else if(gfg.keyCode === left_arrow){
+    else if(gfg.keyCode === left_arrow && left){
         shipVelocity.x += 1
         left = false
     }
-    else if(gfg.keyCode === up_arrow){
+    else if(gfg.keyCode === up_arrow && up){
         shipVelocity.y += 1
         up = false
     }
-    else if(gfg.keyCode === down_arrow){
+    else if(gfg.keyCode === down_arrow && down){
         shipVelocity.y -= 1
         down = false
     }
-    else if(gfg.keyCode === control_button){
+    else if(gfg.keyCode === control_button && control){
         control = false
     }
 };
@@ -444,6 +457,7 @@ window.onkeyup= function(gfg){
 // ticker for da game
 function update() {
     requestAnimationFrame(update)
+    tick++;
 
     // clear the board to allow for drawing new frames
     context.clearRect(0,0, board.width, board.height)
@@ -462,16 +476,23 @@ function update() {
         }
     });
 
-    // playa
-    if (ship.x <= boardWidth-ship.width && ship.y <= boardHeight-16-ship.height) {
-        ship.x += shipVelocity.x
-        ship.y += shipVelocity.y
-    }
-    else
-    {
-        ship.x -= 1
+    // Check if you are outside the board lol
+    if (ship.y >= boardHeight-16-ship.height) {
         ship.y -= 1
     }
+    if (ship.x >= boardWidth-ship.width){
+        ship.x -= 1
+    }
+    if (ship.x <= 0) {
+        ship.x += 1
+    }
+    if (ship.y <= 0) {
+        ship.y += 1
+    }
+
+    // apply the velocity
+    ship.y += shipVelocity.y
+    ship.x += shipVelocity.x
 
     context.drawImage(ship.image, ship.x, ship.y, ship.width, ship.height)
 
