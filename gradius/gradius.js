@@ -372,7 +372,7 @@ function Game() {
 
     setInterval(enemyFireBullet, 500)
 
-    document.getElementById("board").style.backgroundImage = "url('GRADBG.png')";
+    document.getElementById("board").style.backgroundImage = "url('./gradius/GRADBG.png')";
 
     music.pause();
     music = new Audio("./gradius/D_RUNNIN.ogg")
