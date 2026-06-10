@@ -47,9 +47,11 @@ div{
 
 div.titl {
     border: 10px outset rgb(71, 71, 71);
-    background-color: rgb(71, 71, 71);
-    background: url("assets/statbd.png");
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
     text-align: center;
+    color: transparent;
+    animation: rainbow 6s ease-in-out infinite;
+    background-size: 400% 100%;
 
     width: 1040px;
     margin: auto;
@@ -61,7 +63,7 @@ div.titl {
 div.selector {
     border: 10px outset rgb(71, 71, 71);
     background-color: rgb(71, 71, 71);
-    background: url("assets/CEIL5_1.png");
+    background-image: url("assets/CEIL5_1.png");
     text-align: center;
 
     width: 1040px;
@@ -74,7 +76,7 @@ div.selector {
 div.box {
     border: 10px outset rgb(71, 71, 71);
     background-color: rgb(71, 71, 71);
-    background: url("assets/statbd.png");
+    background-image: url("assets/statbd.png");
     text-align: center;
 
     width: 1240px;
@@ -152,4 +154,23 @@ h6 {
     font-family: 'Orbitron', sans-serif;
     font-weight: bold;
     color: white;
+}
+
+a, a:link, a:visited, a:active, .linkOn, .linkOff, input
+{
+	color: #ffffff;
+	text-decoration: none;
+	background-image: linear-gradient(to right, #202020, #6d6d6d);
+	border: 1px solid #222222; 
+	padding: 5px 10px 5px 10px;
+	margin: 0 2px 0 0;
+	cursor:pointer;
+	white-space:nowrap;
+}
+
+
+@keyframes rainbow {
+    0%{background-position:0% 50%; border: 10px outset #6666ff }
+    50%{background-position:100% 25%; border: 10px outset #0099ff}
+    100%{background-position:0% 50%; border: 10px outset #00ff00}
 }

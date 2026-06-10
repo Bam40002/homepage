@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&family=Protest+Guerrilla&display=swap');
+
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "MedievalSharp", cursive;
+    font-style: normal;
+}
+
+.war{
+    height: 100%;
+}
+
+div{
+    margin: auto;
+}
+
+div.paper{
+    background-image: url(assets/papyrus.png);
+    width: 1240px;
+    border: solid 10px rgb(202, 180, 105);
+}
+
+div.battleclass{
+    width: 500px;
+    height: 400px;
+    background-image: url(assets/CEIL5_1.png);
+    border: solid 5px rgb(48, 43, 26);
+    margin: auto;
+    margin-bottom: 50px;
+    size: absolute;
+    color: whitesmoke;
+    text-align: center;
+}
+
+#bgVideo{
+    pointer-events: none;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+table, th, td
+{
+	border-collapse: collapse;
+	padding: 1px;
+}
+
+th
+{
+	background-color: #48656c;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    text-align: center;
+}
+
+
+img.unit{
+    display: block;
+    margin: auto;
+    width: 50%;
+    image-rendering: crisp-edges;
+    border: solid 2px black;
+}
+
+.crt {
+    background: linear-gradient(to top, #000000, #000000, #333333, #333333);
+    background-size: cover;
+    background-size: 100% 1px;
+  }
+
+@media screen{
+    .crt {
+      animation: scanlines infinite 55s linear ;
+    }
+  } 
+  @keyframes scanlines {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 0 -10px;
+    }
+  }
