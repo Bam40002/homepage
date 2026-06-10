@@ -4,6 +4,11 @@ body{
     background-image: url(assets/CARC.png);
 }
 
+html {
+	scrollbar-color: #404040 #000000 !important;
+	scrollbar-width: thin !important;
+}
+
 div.buttoncontainer{
     background-image: radial-gradient(#2cb82c, #978033);
 }

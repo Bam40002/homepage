@@ -9,7 +9,11 @@ body {
     animation-timing-function: linear;
 	font-family: Bahnschrift, sans-serif;
 	font-size: 19px;
-	font-color: #8b97a6;
+}
+
+html {
+	scrollbar-color: #404040 #000000 !important;
+	scrollbar-width: thin !important;
 }
 
 img.icon {
