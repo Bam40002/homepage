@@ -30,6 +30,12 @@
             document.getElementById('bgMusic').play()
             BGmusic = true
         }
+
+        var beepSOUND = new Audio("./assets/funkynoise.ogg")
+
+        function BeepSnd() {
+            beepSOUND.play()
+        }
     </script>
 </head>
 
@@ -61,6 +67,12 @@
 
                 <p>If you looked around here before you may see all the cool website shit I did here.</p>
                 <p>I am learning JAVASCRIPT yes!</p>
+
+                <img src="images/websception.png" alt="">
+
+                <br>
+                <a href="hobbies.html">VISIT THIS SITE</a>
+
             </div>
             
             <hr>
@@ -81,6 +93,14 @@
 
                 <p>Not only do I love making games, I also love making maps for already existing games too!</p>
                 <p>Check out my doom mapping page for more info :)</p>
+
+                <p>GARRYS MOD MAPS!!!</p>
+
+                <img src="images/bammap01.jpg" alt="">
+                <br>
+                <img src="images/bammap02.jpg" alt="">
+                <br>
+                <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3446799257">DOWNLOAD THIS MAP</a>
             </div>
 
             <hr>
@@ -89,6 +109,15 @@
                 <h2>I like to listen to <b>MUSIC</b></h2>
 
                 <p>I love the sound of music!</p>
+                
+                <p>vvv LISTEN TO SOME OF MY FAVOURITE TUNES vvv</p>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qxZExomEZa4?si=NR3vQB5fQ8XcMNNR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Skqla35BOyg?si=UgBVoOdmi6aM4PQF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/w3Iu8z7n8b4?si=EbviGy_0BasU6d6o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/J7FvFWB5iK8?si=6bqMPhD-8yj4jvlX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
+                <p>Also if it says "Video not availible" I blame YouTube</p>
             </div>
 
             <hr>
@@ -102,6 +131,8 @@
                 <br> 1. SPACE STATION 13
                 <br> 2. RIMWORLD
                 <br> 3. KERBAL SPACE PROGRAM
+                <br> 4. DOOM
+                <br> 5. GARRYS MOD
             </div>
 
             <hr>
@@ -114,6 +145,7 @@
             <div class="buttoncontainer">
                 <a href="index.html">HOME</a>
                 <a href="#top">BACK TO TOP</a>
+                <button class="containerbutton" onclick="BeepSnd()" >BEEPEDIY</button>
             </div>
         </div>
     </div>

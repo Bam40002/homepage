@@ -73,3 +73,9 @@ div.gameBox{
 div.textcontainer{
     margin-left: 100px;
 }
+
+img{
+    border: 5px solid #000000;
+    border-radius: 4px;   
+    width: 600px;
+}
