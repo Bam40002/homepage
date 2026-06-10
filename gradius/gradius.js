@@ -18,7 +18,7 @@ let shipHeight = 16;
 let shipX = boardWidth/2 - shipWidth;
 let shipY = boardHeight/2;
 
-let music = new Audio("./D_RUNNIN.ogg")
+let music = new Audio("./gradius/D_RUNNIN.ogg")
 
 let gameover = false
 let score = 0
@@ -50,7 +50,7 @@ class PlayerShip {
         }
 
         var bullet = new Bullet(new Image(), this.x + this.width, this.y + this.height/2 -1)
-        bullet.image.src = "./GRADBULL.png"
+        bullet.image.src = "./gradius/GRADBULL.png"
         bullet.image.onload = function() {
             context.drawImage(bullet.image, bullet.x, bullet.y, bullet.width, bullet.height)
         }
@@ -58,7 +58,7 @@ class PlayerShip {
 
         this.lastShoot = tick;
 
-        var sound = new Audio("./GRADFIRE.ogg")
+        var sound = new Audio("./gradius/GRADFIRE.ogg")
         sound.volume = 0.5
         sound.play()
     }
@@ -73,7 +73,7 @@ class PlayerShip {
 
         music.pause();
 
-        var sound = new Audio("./GRADFUCK.ogg")
+        var sound = new Audio("./gradius/GRADFUCK.ogg")
         sound.volume = 0.5
         sound.play()
 
@@ -119,7 +119,7 @@ class Enemy {
         var bullet = new EnemyBullet(new Image(), this.x + this.width/2, this.y + this.height/2)
         bullet.speedx = (dx / distance) * 2;
         bullet.speedy = (dy / distance) * 2;
-        bullet.image.src = "./GRADBUE1.png"
+        bullet.image.src = "./gradius/GRADBUE1.png"
         bullet.image.onload = function() {
             context.drawImage(bullet.image, bullet.x, bullet.y, bullet.width, bullet.height)
         }
@@ -140,7 +140,7 @@ class Enemy {
         this.x = -200
         this.y = -200
 
-        var sound = new Audio("./GRADDIE.ogg")
+        var sound = new Audio("./gradius/GRADDIE.ogg")
         sound.volume = 0.5
         sound.play()
 
@@ -158,7 +158,7 @@ function spawnEnemies(params) {
     enem.y = Math.floor(Math.random() * (boardHeight-32));
     enem.height = 16
     enem.width = 14
-    enem.image.src = "./GRADEN1.png"
+    enem.image.src = "./gradius/GRADEN1.png"
     enem.image.onload = function() {
         context.drawImage(enem.image, enem.x, enem.y, enem.width, enem.height)
     }
@@ -312,7 +312,7 @@ class UiInterface {
 
 window.onload = function() {
 
-    music = new Audio("./TITLEMUS.ogg")
+    music = new Audio("./gradius/TITLEMUS.ogg")
     music.volume = 0.5
     music.play()
 
@@ -339,21 +339,21 @@ function Game() {
 
 
     ship = new PlayerShip(new Image(), shipX, shipY, shipHeight, shipWidth)
-    ship.image.src = "./SHIP.png"
+    ship.image.src = "./gradius/SHIP.png"
     ship.image.onload = function() {
         context.drawImage(ship.image, ship.x, ship.y, ship.width, ship.height)
     }
 
     // the game map
     map = new Map(new Image(), 0, 0, 224, 4096)
-    map.image.src = "./THELEVEL.png"
+    map.image.src = "./gradius/THELEVEL.png"
     map.image.onload = function() {
         context.drawImage(map.image, map.x, map.y, map.width, map.height)
     }
 
     // the game map
     gameui = new UiInterface(new Image(), 32, 224, 8, 256)
-    gameui.image.src = "./WEPPAGE0.png"
+    gameui.image.src = "./gradius/WEPPAGE0.png"
     gameui.image.onload = function() {
         context.drawImage(gameui.image, gameui.x, gameui.y, gameui.width, gameui.height)
     }
@@ -375,7 +375,7 @@ function Game() {
     document.getElementById("board").style.backgroundImage = "url('GRADBG.png')";
 
     music.pause();
-    music = new Audio("./D_RUNNIN.ogg")
+    music = new Audio("./gradius/D_RUNNIN.ogg")
     music.volume = 0.4
     music.loop = true
     music.play();
