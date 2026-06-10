@@ -144,10 +144,11 @@ class Enemy {
         sound.volume = 0.5
         sound.play()
 
-        var index = enemies.indexOf(Enemy);
+        var index = enemies.indexOf(this);
         if (enemies > -1) { // only splice array when item is found
             enemies.splice(index, 1); // 2nd parameter means remove one item only
         }
+
     }
 }
 
@@ -208,7 +209,7 @@ class Bullet {
     break(){
         this.broke = true
         this.image.src = ""
-        var index = bullets.indexOf(Bullet);
+        var index = bullets.indexOf(this);
         if (bullets > -1) { // only splice array when item is found
             bullets.splice(index, 1); // 2nd parameter means remove one item only
         }
@@ -245,7 +246,7 @@ class EnemyBullet {
     break(){
         this.broke = true
         this.image.src = ""
-        var index = bullets.indexOf(Bullet);
+        var index = bullets.indexOf(this);
         if (bullets > -1) { // only splice array when item is found
             bullets.splice(index, 1); // 2nd parameter means remove one item only
         }
@@ -391,9 +392,6 @@ let shipVelocity = {
     y : 0
 }
 
-// Very stupd. Make this better in the future
-// Dont know if there is a better way to do this. whatever I guess with a switch? welp!
-
 
 // The fuck you mean keyCode is depecrated? 
 // What am I supposed to do now :sob:
@@ -405,26 +403,39 @@ window.onkeydown= function(gfg){
         return
     }
 
-    if(gfg.keyCode === right_arrow && !right){
-        shipVelocity.x += 1
-        right = true
+    switch (gfg.keyCode) {
+        case right_arrow:
+            if (!right) {
+                shipVelocity.x += 1
+                right = true
+            }
+            break;
+        case left_arrow:
+            if (!left) {
+                shipVelocity.x -= 1
+                left = true
+            }
+            break;
+        case up_arrow:
+            if (!up) {
+                shipVelocity.y -= 1
+                up = true
+            }
+            break;
+        case down_arrow:
+            if (!down) {
+                shipVelocity.y += 1
+                down = true
+            }
+            break;
+        case control_button:
+            if (!control) {
+                ship.fireBullet()
+                control = true
+            }
+            break;
     }
-    else if(gfg.keyCode === left_arrow && !left){
-        shipVelocity.x -= 1
-        left = true
-    }
-    else if(gfg.keyCode === up_arrow && !up){
-        shipVelocity.y -= 1
-        up = true
-    }
-    else if(gfg.keyCode === down_arrow && !down){
-        shipVelocity.y += 1
-        down = true
-    }
-    else if(gfg.keyCode === control_button && !control){
-        ship.fireBullet()
-        control = true
-    }
+
 };
 
 window.onkeyup= function(gfg){
@@ -433,24 +444,36 @@ window.onkeyup= function(gfg){
         return
     }
 
-    if(gfg.keyCode === right_arrow && right){
-        shipVelocity.x -= 1
-        right = false
-    }
-    else if(gfg.keyCode === left_arrow && left){
-        shipVelocity.x += 1
-        left = false
-    }
-    else if(gfg.keyCode === up_arrow && up){
-        shipVelocity.y += 1
-        up = false
-    }
-    else if(gfg.keyCode === down_arrow && down){
-        shipVelocity.y -= 1
-        down = false
-    }
-    else if(gfg.keyCode === control_button && control){
-        control = false
+    switch (gfg.keyCode) {
+        case right_arrow:
+            if (right) {
+                shipVelocity.x -= 1
+                right = false
+            }
+            break;
+        case left_arrow:
+            if (left) {
+                shipVelocity.x += 1
+                left = false
+            }
+            break;
+        case up_arrow:
+            if (up) {
+                shipVelocity.y += 1
+                up = false
+            }
+            break;
+        case down_arrow:
+            if (down) {
+                shipVelocity.y -= 1
+                down = false
+            }
+            break;
+        case control_button:
+            if (control) {
+                control = false
+            }
+            break;
     }
 };
 
