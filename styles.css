@@ -69,10 +69,10 @@ div.box {
     background: url("assets/statbd.png");
     text-align: center;
 
-    width: 1540px;
+    width: 1240px;
     margin: auto;
 
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 div.intern {
@@ -87,10 +87,13 @@ div.intern {
 div.jawn {
     text-align: left;
 
+    width: 520px;
+    margin: auto;
     margin-top: 10px;
+    margin-top: auto;
     margin-bottom: 10px;
-    margin-right: 500px;
-    margin-left: 500px;
+    margin-bottom: auto;
+
 }
 
 div.jawner {
@@ -99,10 +102,12 @@ div.jawner {
 
 div.changelog{
     border: 5px solid rgb(34, 34, 34);
+    width: 620px;
+    margin: auto;
     margin-top: 10px;
+    margin-top: auto;
     margin-bottom: 10px;
-    margin-right: 400px;
-    margin-left: 400px;
+    margin-bottom: auto;
 }
 
 li {
