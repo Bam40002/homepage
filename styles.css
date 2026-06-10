@@ -34,15 +34,20 @@ strong {
     font-weight: bold;
 }
 
+div{
+    size: absolute;
+}
+
 div.titl {
     border: 10px outset rgb(71, 71, 71);
     background-color: rgb(71, 71, 71);
     background: url("assets/statbd.png");
     text-align: center;
 
+    width: 1040px;
+    margin: auto;
+
     margin-top: 100px;
-    margin-right: 400px;
-    margin-left: 400px;
 }
 
 div.selector {
@@ -51,10 +56,10 @@ div.selector {
     background: url("assets/statbd.png");
     text-align: center;
 
-    margin-top: 10px;
-    margin-right: 400px;
-    margin-left: 400px;
-    margin-bottom: 50px;
+    width: 1040px;
+    margin: auto;
+
+    margin-top: 20px;
 }
 
 
@@ -64,10 +69,10 @@ div.box {
     background: url("assets/statbd.png");
     text-align: center;
 
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-right: 200px;
-    margin-left: 200px;
+    width: 1540px;
+    margin: auto;
+
+    margin-top: 100px;
 }
 
 div.intern {
@@ -88,6 +93,18 @@ div.jawn {
     margin-left: 500px;
 }
 
+div.jawner {
+    text-align: left;
+}
+
+div.changelog{
+    border: 5px solid rgb(34, 34, 34);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 400px;
+    margin-left: 400px;
+}
+
 li {
     font-family: 'Orbitron', sans-serif;
     font-weight: bold;
@@ -104,6 +121,13 @@ ul.selector {
     list-style: none;
     display: inline-block;
     text-align: center;
+}
+
+img.apartimage{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 600px;
 }
 
 h1,

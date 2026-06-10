@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+body{
+    background-image: url("assets/somemong.png");
+}
+
+div#head {
+    background-image: url(assets/CEIL5_1.png);
+    width: 1040px;
+    margin: auto;
+    margin-bottom: auto;
+    margin-bottom: 10px;
+    border: solid black;
+  }
+
+  div#selector {
+    font-family: 'Orbitron', sans-serif;
+    font-variant: small-caps;
+    margin: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+    font-size: 15px;
+    width: 1040px;
+    border: double black;
+    background-color: rgb(173, 173, 173);
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
+
+  div#selector {
+    font-family: 'Orbitron', sans-serif;
+    font-variant: small-caps;
+    font-size: 15px;
+  }
+
+  ul#selector li {
+    display: inline-block;
+    background-color: rgba(173, 173, 173, 0);
+    width: 9%;
+    text-align: center;
+  }
+
+  div#title {
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+    text-shadow: -2px -2px 5px #000;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 200%;
+    font-weight: bold;
+    font-variant: small-caps;
+    width: 1040px;
+    margin: auto;
+    margin-bottom: auto;
+    margin-bottom: 10px;
+  }
+
+  div#box {
+    background-image: url(assets/CEIL5_1.png);
+    width: 1040px;
+    margin: auto;
+    margin-bottom: auto;
+    margin-bottom: 10px;
+    border: solid black;
+  }
+
+  div#title2 {
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+    text-shadow: -2px -2px 5px #000;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 200%;
+    font-weight: bold;
+    font-variant: small-caps;
+    width: 840px;
+    margin: auto;
+    margin-bottom: auto;
+    margin-bottom: 10px;
+  }
+
+  div#startan {
+    background-image: url(assets/SW12_4.png);
+    width: 840px;
+    margin: auto;
+    margin-bottom: auto;
+    margin-bottom: 10px;
+    margin-top: auto;
+    margin-top: 10px;
+    border: solid black;
+  } 
