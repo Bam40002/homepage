@@ -7,6 +7,12 @@ body {
     background-repeat: repeat-x repeat-y;
     font-family: monaco,Consolas,Lucida Console,monospace; font-size: 15px;
 }
+
+html {
+	scrollbar-color: #404040 #000000 !important;
+	scrollbar-width: thin !important;
+}
+
 img.icon {
     width: 200px;
     animation: normal;
