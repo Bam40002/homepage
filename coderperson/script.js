@@ -1,14 +1,37 @@
 
-
+// general stuff
 const boardHeight = 1080
 const boardWidth = 1920
 
 let board
 let context
 
+// particle definitions
 let particles = []
+let particleHeight = 250
+let possibleColors = [
+	"#4e0000ff",
+	"#004447ff",
+	"#233030ff",
+	"#014d01ff",
+	"#5c5f02ff"
+]
+
+// music
+let music = new Audio("assets/VGPromo1.ogg")
+
+function ToggleMusic() {
+	if(music.paused)
+		music.play()
+	else
+		music.pause()
+}
 
 window.onload = function() {
+	music.volume = 0.3
+	music.loop = true
+	music.play()
+
 	board = document.getElementById("board");
 
 	board.width = boardWidth*2;
@@ -21,15 +44,6 @@ window.onload = function() {
 
 	setInterval(ProcessParticles, 1)
 }
-
-let particleHeight = 250
-let possibleColors = [
-	"#4e0000ff",
-	"#004447ff",
-	"#233030ff",
-	"#014d01ff",
-	"#5c5f02ff"
-]
 
 function PopulateParticles() {
 	for (let index = 0; index < 100; index++) {
@@ -47,7 +61,6 @@ function ProcessParticles() {
 
 	particles.forEach((item) => {
 		item[1] -= item[2]
-		//item[1] -= 5
 		context.fillStyle = item[3];
 		context.fillRect(item[0], item[1], 1, particleHeight)
 		
