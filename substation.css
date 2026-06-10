@@ -7,6 +7,9 @@ body {
     animation-name: example;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+	font-family: Bahnschrift, sans-serif;
+	font-size: 19px;
+	font-color: #8b97a6;
 }
 
 img.icon {
@@ -41,36 +44,54 @@ div{
     size: absolute;
 }
 
+div.left{
+    size: absolute;
+}
+
+div.right{
+    size: absolute;
+}
+
 div.titl {
-    border: 10px outset rgb(71, 71, 71);
+    border: solid 5px rgb(34, 54, 34);
     background-color: rgb(71, 71, 71);
-    background: url("assets/statbd.png");
+    background-image: url("assets/statbd.png");
     text-align: center;
 
-    width: 1040px;
+    width: 1240px;
     margin: auto;
 
 
-    margin-top: 300px;
+    margin-top: 100px;
 }
 
 div.selector {
-    border: 10px outset rgb(71, 71, 71);
+    border: solid 5px rgb(49, 49, 49);
     background-color: rgb(71, 71, 71);
-    background: url("assets/CEIL5_1.png");
+    background-image: url("assets/CEIL5_1.png");
     text-align: center;
 
-    width: 1040px;
+    width: 1240px;
     margin: auto;
 
-    margin-top: 20px;
+}
+
+div.selector.half {
+    border: solid 5px rgb(49, 49, 49);
+    background-color: rgb(71, 71, 71);
+    background-image: url("assets/CEIL5_1.png");
+    text-align: center;
+
+    width: 560px;
+    margin: auto;
+
 }
 
 
 div.box {
-    border: 10px outset rgb(71, 71, 71);
+    border: solid 5px rgb(34, 54, 34);
     background-color: rgb(71, 71, 71);
-    background: url("assets/statbd.png");
+    background-image: url("assets/statbd.png");
     text-align: center;
 
     width: 1240px;
@@ -148,4 +169,46 @@ h6 {
     font-family: 'Orbitron', sans-serif;
     font-weight: bold;
     color: white;
+}
+
+a, a:link, a:visited, a:active, .linkOn, .linkOff, input
+{
+	color: #ffffff;
+	text-decoration: none;
+	background-image: linear-gradient(to right, #101a10, #223622);
+	border: 1px solid #223622; 
+	padding: 5px 10px 5px 10px;
+	margin: 0 2px 0 0;
+	cursor:pointer;
+	white-space:nowrap;
+}
+
+a.playgame
+{
+	color: #ffffff;
+	text-decoration: none;
+	background-image: linear-gradient(to right, #4b0000, rgb(104, 0, 0));
+	border: 1px solid #610000; 
+	padding: 25px 10px 5px 10px;
+	margin: 10px 0px 0px 0;
+	cursor:pointer;
+	white-space:nowrap;
+}
+
+.terror			{color: #dd0000;	font-weight: bold;	animation: terror 200ms infinite; text-shadow: 0 0 7px #c51e1e;}
+@keyframes terror {
+	0%		{color: #f75a5a; text-shadow: 0 0 7px #c51e1e;}
+	50%		{color: #dd0000; text-shadow: 0 0 14px #c51e1e;}
+	100%	{color: #f75a5a; text-shadow: 0 0 7px #c51e1e;}
+}
+
+table, th, td
+{
+	border-collapse: collapse;
+	padding: 1px;
+}
+
+th
+{
+	background-color: #48656c;
 }
