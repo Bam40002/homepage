@@ -1,0 +1,25 @@
+body{
+    text-align: center;
+    background-color: black;
+    filter: none;
+}
+
+#board{
+    margin-top: 100px;
+    background-image: url("TITLEPIC.png");
+    background-color: blue;
+    background-size: cover;
+    image-rendering: pixelated;
+}
+
+button.playgame{
+	color: #ffffff;
+	text-decoration: none;
+	background-image: linear-gradient(to right, #000dc9, #180085);
+	border: 1px solid #070069; 
+	padding: 5px 10px 5px 10px;
+	cursor:pointer;
+	white-space:nowrap;
+
+    font-size: 50px;
+}
