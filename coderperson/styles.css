@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+
+body {
+    background-image: url("assets/circ2.png");
+    background-attachment: fixed;
+    background-color: "#1e1e1e";
+    font-family: monaco,Consolas,Lucida Console,monospace; font-size: 15px;
+}
+img.icon {
+    width: 200px;
+    animation: normal;
+}
+
+mark.red {
+    color: #ff0000;
+    background: none;
+}
+
+mark.green {
+    color: #00ff0d;
+    background: none;
+}
+
+p {
+    color: white;
+}
+
+a:visited {
+    color: rgb(254, 255, 192);
+}
+
+strong {
+    color: white;
+    font-weight: bold;
+}
+
+div{
+    size: absolute;
+}
+
+div.titl {
+    border: 5px solid rgb(0, 60, 61);
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    text-align: center;
+    color: transparent;
+    animation: rainbow 6s ease-in-out infinite;
+    background-size: 400% 100%;
+
+    width: 1212px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+div.selector {
+    border: 5px solid rgb(8, 7, 10);
+    background-color: rgba(30, 30, 30, 0.479);
+    background-image: url("assets/CEIL5_1.png");
+    text-align: center;
+
+    width: 1212px;
+    margin: auto;
+
+    margin-bottom: 20px;
+}
+
+div.intern {
+    text-align: inherit;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 300px;
+    margin-left: 300px;
+}
+
+div.jawn {
+    text-align: left;
+
+    width: 520px;
+    margin: auto;
+    margin-top: 10px;
+    margin-top: auto;
+    margin-bottom: 10px;
+    margin-bottom: auto;
+
+}
+
+div.jawner {
+    text-align: left;
+}
+
+div.changelog{
+    border: 5px solid rgb(34, 34, 34);
+    width: 620px;
+    margin: auto;
+    margin-top: 10px;
+    margin-top: auto;
+    margin-bottom: 10px;
+    margin-bottom: auto;
+}
+
+li {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+li.selector {
+    display: inline;
+    margin-right: 10px;
+}
+
+
+ul.selector {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+}
+
+ul.selector.contact{
+    line-height: 5px;
+}
+
+img.apartimage{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 600px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+a, a:link, a:visited, a:active, .linkOn, .linkOff, input
+{
+	color: #ffffff;
+	text-decoration: none;
+	background-image: linear-gradient(to right, #202020, #6d6d6d);
+	border: 2px solid #222222; 
+	padding: 5px 10px 5px 10px;
+	margin: 0 2px 0 0;
+	cursor:pointer;
+	white-space:nowrap;
+    font-family: 'Orbitron', sans-serif;
+    font-size: large;
+}
+
+#myVideo {
+    width: 500px;
+    height: 100%;
+    outline: 5px solid rgb(8, 7, 10);
+}
+
+canvas{
+    top: 0;
+    position: fixed;
+    z-index: -1;
+
+}
+
+#wrapper {
+    width: 100%;
+}
+
+@keyframes rainbow {
+    0%{background-position:0% 50%; border: 5px solid #6666ff }
+    50%{background-position:100% 25%; border: 5px solid #0099ff}
+    100%{background-position:0% 50%; border: 5px solid #6666ff}
+}
