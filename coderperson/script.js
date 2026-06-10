@@ -27,6 +27,12 @@ function ToggleMusic() {
 		music.pause()
 }
 
+function PlaySound(soundpath, volume) {
+	let sound = new Audio(soundpath)
+	sound.volume = volume
+	sound.play()
+}
+
 window.onload = function() {
 	music.volume = 0.3
 	music.loop = true
@@ -43,6 +49,13 @@ window.onload = function() {
 	PopulateParticles()
 
 	setInterval(ProcessParticles, 1)
+
+	// we are finished. Kill the fucking LOADING SCREEN!!
+	let loadingScreen = document.getElementById("loadingscreen")
+	loadingScreen.style.animation = "fadein 1s"
+	setTimeout(function() { loadingScreen.remove() }, 500);
+
+	PlaySound("assets/WIN95_S.ogg", 0.3)
 }
 
 function PopulateParticles() {
@@ -73,5 +86,4 @@ function ProcessParticles() {
 			item[3] = possibleColors[Math.floor(Math.random() * possibleColors.length)]
 		}
 	});
-
 }
