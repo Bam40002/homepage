@@ -225,3 +225,8 @@ button.containerbutton{
     0%{opacity: 1}
     100%{opacity:0}
 }
+
+p.secret{
+    margin: 0;
+    color: transparent;
+}
