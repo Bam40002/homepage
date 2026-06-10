@@ -212,3 +212,13 @@ th
 {
 	background-color: #48656c;
 }
+
+span.red {
+    color: #ff0000;
+    background: none;
+}
+
+span.green {
+    color: #00ff0d;
+    background: none;
+}

@@ -1,0 +1,75 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    background-image: url(assets/CARC.png);
+}
+
+div.buttoncontainer{
+    background-image: radial-gradient(#2cb82c, #978033);
+}
+
+a, a:link, a:visited, a:active, .linkOn, .linkOff, input
+{
+	color: #ffffff;
+	text-decoration: none;
+	background-image: linear-gradient(to right, #101a10, #223622);
+	border: 1px solid #223622; 
+	padding: 5px 10px 5px 10px;
+	margin-right: 10px;
+	cursor:pointer;
+	white-space:nowrap;
+}
+
+button{
+    font-size: 20px;
+}
+
+button.playgame{
+	color: #ffffff;
+	text-decoration: none;
+	background-image: linear-gradient(to right, #000dc9, #180085);
+	border: 1px solid #070069; 
+	padding: 5px 10px 5px 10px;
+	cursor:pointer;
+	white-space:nowrap;
+
+    font-size: 50px;
+}
+
+button.containerbutton{
+	color: #ffffff;
+	text-decoration: none;
+	background-image: linear-gradient(to right, #1a1010, #362222);
+	border: 1px solid #223622; 
+	padding: 5px 10px 5px 10px;
+	margin-right: 10px;
+	cursor:pointer;
+	white-space:nowrap;
+}
+
+#board{
+    background-image: url("gradius/GRADBG.png");
+    background-color: blue;
+    background-size: cover;
+    image-rendering: pixelated;
+    border: solid 2px black;
+}
+
+div.box {
+    border: solid 5px rgb(34, 54, 34);
+    background-color: rgb(71, 71, 71);
+    background-image: linear-gradient(rgb(167, 167, 167), rgb(255, 255, 255));
+
+    width: 1340px;
+    margin: auto;
+
+    margin-top: 0px;
+}
+
+div.gameBox{
+    text-align: center;
+}
+
+div.textcontainer{
+    margin-left: 100px;
+}
