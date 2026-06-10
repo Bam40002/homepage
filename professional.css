@@ -1,0 +1,59 @@
+/* My life is like a video game */
+
+body{
+    background: linear-gradient(blue, purple);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.box{
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px rgba(36, 36, 36, 0.438);
+}
+
+div.content{
+    margin: 20px;
+}
+
+.flex-parent-element {
+    display: flex;
+    width: 50%;
+  }
+  
+  .flex-child-element {
+    flex: 1;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px rgba(36, 36, 36, 0.438);
+    margin: 20px;
+  }
+  
+  .flex-child-element:first-child {
+    margin-right: 20px;
+  }
+  
+
+li.selector {
+    display: inline;
+    margin: 10px;
+}
+
+ul.selector {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+}
+
+mark.red {
+    color: #ff0000;
+    background: none;
+}
+
+
+mark.green {
+    color: #00ff0d;
+    background: none;
+}
