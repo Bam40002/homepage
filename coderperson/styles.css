@@ -4,7 +4,7 @@
 body {
     background-image: url("assets/circ2.png");
     background-attachment: fixed;
-    background-color: "#1e1e1e";
+    background-repeat: repeat-x repeat-y;
     font-family: monaco,Consolas,Lucida Console,monospace; font-size: 15px;
 }
 img.icon {
