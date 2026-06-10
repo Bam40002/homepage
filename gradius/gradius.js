@@ -42,6 +42,8 @@ class PlayerShip {
         this.x = posx;
         this.y = posy;
         this.image = image;
+        this.lastShoot = 0;
+        this.shootDelay = 10;
     }
     // fire da bullet
     fireBullet() {
